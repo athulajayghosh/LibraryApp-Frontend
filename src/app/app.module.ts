@@ -7,6 +7,11 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { RouterModule, Routes } from '@angular/router';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { UserRegistrationComponent } from './user-registration/user-registration.component';
+import { BookEntryComponent } from './book-entry/book-entry.component';
+import { BookSearchComponent } from './book-search/book-search.component';
+import { BookDeleteComponent } from './book-delete/book-delete.component';
+import { BookEditComponent } from './book-edit/book-edit.component';
+import { ViewAllComponent } from './view-all/view-all.component';
 
 const myRoute: Routes=[
   {path:"",
@@ -17,6 +22,21 @@ const myRoute: Routes=[
   },
   {path:"userregistration",
   component:UserRegistrationComponent
+  },
+  {path:"entry",
+  component:BookEntryComponent
+  },
+  {path:"search",
+  component:BookSearchComponent
+  },  
+  {path:"edit",
+  component:BookEditComponent
+  },  
+  {path:"delete",
+  component:BookDeleteComponent
+  },
+  {path:"viewall",
+  component:ViewAllComponent
   }
 ]
 
@@ -25,7 +45,12 @@ const myRoute: Routes=[
     AppComponent,
     AdminLoginComponent,
     UserLoginComponent,
-    UserRegistrationComponent
+    UserRegistrationComponent,
+    BookEntryComponent,
+    BookSearchComponent,
+    BookDeleteComponent,
+    BookEditComponent,
+    ViewAllComponent
   ],
   imports: [
     BrowserModule,
