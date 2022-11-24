@@ -12,6 +12,7 @@ import { BookSearchComponent } from './book-search/book-search.component';
 import { BookDeleteComponent } from './book-delete/book-delete.component';
 import { BookEditComponent } from './book-edit/book-edit.component';
 import { ViewAllComponent } from './view-all/view-all.component';
+import { NavComponent } from './nav/nav.component';
 
 const myRoute: Routes=[
   {path:"",
@@ -50,7 +51,8 @@ const myRoute: Routes=[
     BookSearchComponent,
     BookDeleteComponent,
     BookEditComponent,
-    ViewAllComponent
+    ViewAllComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
