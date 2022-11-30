@@ -8,12 +8,12 @@
             <div class="row g-3">
                 <div class="col col-12 col-sm-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label">Book Title</label>
-                    <input type="text" name="" id="" class="form-control">
+                    <input type="text" name="editbook" [(ngModel)]="editbook" class="form-control">
                 </div>
 
                 <div class="col col-12 col-sm-12 col-lg-12 col-xl-12 col-xxl-12">
                     <div class="d-grid gap-2 col-6 mx-auto">
-                        <a class="btn btn-primary" type="button">Search</a>
+                        <a class="btn btn-primary" (click)="editValues()" type="button">Search</a>
                       </div>
                 </div>
             </div>

@@ -9,8 +9,15 @@ export class AdminLoginComponent {
   adminUsername=""
   adminpass=""
   adminValues=()=>{
-    let admincredentials:any={adminUsername:this.adminUsername,adminpass:this.adminpass}
-    console.log(this.adminValues);
+    let admincredentials:any={
+      adminUsername:this.adminUsername,
+      adminpass:this.adminpass
+    }   
+  console.log(admincredentials);
+  if (this.adminUsername=="admin" && this.adminpass=="12345") {
+    alert("Valid Login")
+  } else {
+    alert("Invalid Credentials")
   }
-  
+} 
 }

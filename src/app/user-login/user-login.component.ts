@@ -8,8 +8,17 @@ import { Component } from '@angular/core';
 export class UserLoginComponent {
   userUsername=""
   userPass=""
-userValues=()=>{
-  let usercredentials:any={userUsername:this.userUsername,userpass:this.userPass}
-  console.log(this.userValues);
+  userValues=()=>{
+  let usercredentials:any={
+    userUsername:this.userUsername,
+    userPass:this.userPass
+  }
+  console.log(usercredentials);
+  
+  if (this.userUsername=="admin" && this.userPass=="12345") {
+    alert("Valid Login")
+  } else {
+    alert("Invalid Credentials")
+  }
 }
 }

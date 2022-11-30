@@ -24,7 +24,7 @@ export class UserRegistrationComponent {
     let userdata:any={ 
       Name:this.Name,
       AadharNo:this.AadharNo,
-      Address:this.AadharNo,
+      Address:this.Address,
       PinCode:this.PinCode,
       dob:this.dob,
       Email:this.Email,
