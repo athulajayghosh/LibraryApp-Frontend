@@ -13,7 +13,8 @@ export class UserLoginComponent {
     userUsername:this.userUsername,
     userPass:this.userPass
   }
-  console.log(usercredentials);
+  
+  
   
   if (this.userUsername=="admin" && this.userPass=="12345") {
     alert("Valid Login")
